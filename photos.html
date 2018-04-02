@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>S school</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,20 +20,17 @@
   .w3-row-padding img {
     margin-bottom: 12px
   }
-
   /* Set the width of the sidebar to 120px */
 
   .w3-sidebar {
     width: 120px;
     background: #222;
   }
-
   /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 
   #main {
     margin-left: 120px
   }
-
   /* Remove margins from "page content" on small screens */
 
   @media only screen and (max-width: 600px) {
@@ -41,7 +38,6 @@
       margin-left: 0
     }
   }
-
 </style>
 
 <body class="w3-black">
@@ -53,10 +49,10 @@
       <i class="fa fa-home w3-xxlarge"></i>
       <p>HOME</p>
     </span>
-    <span class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
       <i class="fa fa-user w3-xxlarge"></i>
       <p>ABOUT</p>
-    </span>
+    </a>
     <span class="w3-bar-item w3-button w3-padding-large w3-black">
       <i class="fa fa-eye w3-xxlarge"></i>
       <p>PHOTOS</p>
@@ -71,8 +67,8 @@
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-center w3-small" style="background: #222;">
       <span class="w3-bar-item w3-button w3-hover-black" style="width:25% !important">HOME</span>
-      <span class="w3-bar-item w3-button w3-hover-black" style="width:25% !important">ABOUT</span>
-      <span class="w3-bar-item w3-button w3-black" style="width:25% !important">PHOTOS</span>
+      <a href="about.html" class="w3-bar-item w3-button w3-black" style="width:25% !important">ABOUT</a>
+      <span class="w3-bar-item w3-button w3-hover-black" style="width:25% !important">PHOTOS</span>
       <span class="w3-bar-item w3-button w3-hover-black" style="width:25% !important">CONTACT</span>
     </div>
   </div>
@@ -80,40 +76,33 @@
   <!-- Page Content -->
   <div class="w3-padding-large" id="main">
     <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-      <h1 class="w3-jumbo">
-        <span class="w3-hide-small">I'm</span> John Doe.</h1>
-      <p>Photographer and Web Designer.</p>
+    <header class="w3-container w3-center w3-black" id="home">
+      <h1 class="w3-jumbo">Our photos.</h1>
+      <p class="w3-wide">This is weekly event. Everybody can join and make beautiful photos. We will choose 2 best of them and post here</p>
     </header>
 
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-      <h2 class="w3-text-light-grey">My Name</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-      <p class="w3-wide">Photography</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    <!-- Photos Section -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-col s7">
+        <div class="w3-card-4">
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4>The wedding day</h4>
+            <p>A Year 7 student took it in his brother's wedding day</p>
+          </div>
+        </div>
       </div>
-      <p class="w3-wide">Web Design</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+
+      <div class="w3-col s5">
+        <div class="w3-card-4">
+          <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4>Dancing under the water</h4>
+            <p>3 Year 10 students took it in a competition 2 year ago</p>
+          </div>
+        </div>
       </div>
-      <p class="w3-wide">Photoshop</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-      </div>
-      <br>
+      <!-- End photo grid -->
     </div>
 
     <!-- END PAGE CONTENT -->
